@@ -1,0 +1,81 @@
+body {
+  color: var(--thm-black);
+  margin: 0;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("/images/parallax.jpg");
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* Font styles */
+  color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 700;
+  margin: 0;
+}
+
+p {
+  font-size: 16px;
+}
+
+.footer-btn {
+  background-color: #c81451;
+  color: #fff;
+  border-radius: 27px;
+  transition: all 0.4s ease;
+  padding: 5px 15px;
+}
+
+.footer-btn:hover {
+  background-color: var(--thm-black);
+  color: #ffffff;
+}
+
+.radius-banner{
+  border-radius: 15px;
+}
+.header-yrc{
+  background: rgb(240,135,227);
+  background: linear-gradient(90deg, rgba(240,135,227,1) 0%, rgba(246,98,134,1) 100%);
+  border-radius: 15px;
+}
+.bg-yrc{
+  background-color: #e91e63;
+}
+.bg-director{
+  background-color: #EF4982;
+}
+.f-pink{
+  color: #e91e63;
+}
+.f-pink:hover{
+  color: #e91e63;
+}
+.center-logo {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 110px;
+  transition: .2s;
+  z-index: 9;
+  top: 3px;
+}
+.shadow{
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+.fw-600{
+  font-weight: 600;
+}
