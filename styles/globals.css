@@ -41,9 +41,7 @@ p {
   text-align: center;
 }
 .footer-btn > i {
-
   margin-left: -2px;
- 
 }
 
 .footer-btn:hover {
@@ -80,27 +78,31 @@ p {
   font-family: "IBMPlexSansThai", sans-serif;
 }
 
-.radius-banner{
+.radius-banner {
   border-radius: 15px;
 }
-.radius-button{
+.radius-button {
   border-radius: 30px;
 }
-.header-yrc{
-  background: rgb(240,135,227);
-  background: linear-gradient(90deg, rgba(240,135,227,1) 0%, rgba(246,98,134,1) 100%);
+.header-yrc {
+  background: rgb(240, 135, 227);
+  background: linear-gradient(
+    90deg,
+    rgba(240, 135, 227, 1) 0%,
+    rgba(246, 98, 134, 1) 100%
+  );
   border-radius: 15px;
 }
-.bg-yrc{
+.bg-yrc {
   background-color: #e91e63;
 }
-.bg-director{
-  background-color: #EF4982;
+.bg-director {
+  background-color: #ef4982;
 }
-.f-pink{
+.f-pink {
   color: #e91e63;
 }
-.f-pink:hover{
+.f-pink:hover {
   color: #e91e63;
 }
 .center-logo {
@@ -109,38 +111,58 @@ p {
   right: 0;
   margin: 0 auto;
   width: 110px;
-  transition: .2s;
+  transition: 0.2s;
   z-index: 9;
   top: 3px;
 }
-.shadow{
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+.shadow {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 }
-.fw-600{
+.fw-600 {
   font-weight: 600;
 }
-.bg-card{
-  background-color: #FE1B68;
+.bg-card {
+  background-color: #fe1b68;
 }
-.border-n{
+.border-n {
   border: none;
 }
-.line{
+.line {
   background-color: #e91e63;
   color: #e91e63;
   height: 5px;
   width: 100%;
 }
-.text1{
-  display:flex;
-  flex-direction:row;
+.text1 {
+  display: flex;
+  flex-direction: row;
   align-items: center;
 }
-.text2{
-  flex-grow:0;
+.text2 {
+  flex-grow: 0;
 }
-.line2{
-  flex-grow:1;
+.line2 {
+  flex-grow: 1;
   height: 4px;
   background-color: #e91e63;
+}
+
+/* custom scrollbar */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a8bbbf;
 }
