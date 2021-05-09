@@ -9,7 +9,7 @@ export default class Slide extends Component {
                 <div className="container">
                   <div className="row">
                       <div className="col-xl-8 col-lg-7 mt-5 mb-5 text-center">
-                      <div id="carouselExampleControls" className="carousel slide mt-lg-5" data-ride="carousel">
+                      <div id="carouselExampleControls" className="carousel slide" data-ride="carousel">
                           <div className="carousel-inner">
                             <div className="carousel-item active">
                               <img className="d-block w-100 radius-banner" src="/images/regis.jpg" alt="First slide" />
