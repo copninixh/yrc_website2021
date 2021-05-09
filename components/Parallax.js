@@ -8,7 +8,7 @@ export default class Parallax extends Component {
           <div className="container pt-5 pb-5">
             <h2
               align="center"
-              className="pb-4 mb-4"
+              className="pb-4d mb-4"
               style={{ borderBottom: "2px solid" }}
             >
               ข้าไม่ต้องการตำราเรียนที่เดินได้ <br /> ที่ข้าอยากได้นั้น

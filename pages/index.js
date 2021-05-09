@@ -1,322 +1,89 @@
 import React from "react";
+import Carousel from "../components/Carousel";
+import Opendata from "../components/Opendata";
+import fame from "../data/fame";
+import opendatas from "../data/opendatas";
+import Navbar from "../components/Navbar";
+import Banner from "../components/Banner";
+import Slide from "../components/Slide";
+import News from "../components/News";
+import Activity from "../components/Activity";
 
 export default function index() {
+  const openDataElements = opendatas.map((data, index) => {
+    return <Opendata key={index} data={data} />;
+  });
+
+  const hallOfFameElements = fame.map((person, index) => {
+    return <Carousel key={index} person={person} />;
+  });
   return (
     <>
-      <header className="site-header-two site-header-two__home-four">
-        <nav className="main-nav__two stricky original" style={{backgroundColor:"white",color:"black",height:"65px"}}>
-          <div className="container-fluid" style={{height:"65px"}}>
-            <div className="main-nav__logo-box mt-1">
-              <a href="index.html" className="f-pink" style={{fontSize:"20px",fontWeight:"600",}}>
-                โรงเรียนยุพราชวิทยาลัย จังหวัดเชียงใหม่
-                <br/>
-                <small className="text-dark" style={{fontWeight:"600",marginTop:"-7px",display: "block"}}>Yupparaj Wittayalai School </small>
-              </a>
 
-             
-            </div>
-            {/* /.main-nav__logo-box */}
-            <div className="center-logo">
-              <a href="index.html">
-                <img src="/img/logo.png" className="img-fluid" alt />
-              </a>
-            </div>
-            
-           
-                
-            <div className="main-nav__main-navigation">
-              <ul className="main-nav__navigation-box">
+        <div className="page-wrapper">
+            <Navbar/>
+            <Banner/>
+            <Slide/>
+            <News/>
+            <Activity/>
 
               
-                <li className="current">
-                  <a href="index.html" className="s1">
-                    หน้าหลัก
-                    
-                  </a>
-                  
-                </li>
               
-                <li className="dropdown">
-                  <a href="services-1.html">
-                    เกี่ยวกับโรงเรียน
-                    <button className="dropdown-btn">
-                      <i className="fa fa-angle-right" />
-                    </button>
-                  </a>
-                  <ul>
-                    <li>
-                      <a href="services-1.html">Services 01</a>
-                    </li>
-                    <li>
-                      <a href="services-2.html">Services 02</a>
-                    </li>
-                    <li>
-                      <a href="services-details.html">Services Details</a>
-                    </li>
-                  </ul>
-                  {/* /.sub-menu */}
-                </li>
-                <li className="dropdown">
-                  <a href="portfolio-standard.html">
-                    YRC E-Service
-                    <button className="dropdown-btn">
-                      <i className="fa fa-angle-right" />
-                    </button>
-                  </a>
-                  <ul>
-                    <li>
-                      <a href="portfolio-standard.html">Portfolio Standard</a>
-                    </li>
-                    <li>
-                      <a href="portfolio-full.html">Portfolio Full</a>
-                    </li>
-                    <li>
-                      <a href="portfolio-masonary.html">Portfolio Masonary</a>
-                    </li>
-                    <li>
-                      <a href="portfolio-details.html">Portfolio Details</a>
-                    </li>
-                  </ul>
-                  {/* /.sub-menu */}
-                </li>
-                <li className="dropdown">
-                  <a href="portfolio-standard.html">
-                    YRC E-Learning
-                    <button className="dropdown-btn">
-                      <i className="fa fa-angle-right" />
-                    </button>
-                  </a>
-                  <ul>
-                    <li>
-                      <a href="portfolio-standard.html">Portfolio Standard</a>
-                    </li>
-                    <li>
-                      <a href="portfolio-full.html">Portfolio Full</a>
-                    </li>
-                    <li>
-                      <a href="portfolio-masonary.html">Portfolio Masonary</a>
-                    </li>
-                    <li>
-                      <a href="portfolio-details.html">Portfolio Details</a>
-                    </li>
-                  </ul>
-                  {/* /.sub-menu */}
-                </li>
-               
-              </ul>
+
+      
+          
+
+      <div
+              className="col-xl-12 "
+              style={{
+                backgroundColor: "#FFCCDE",
+                paddingTop: "80px",
+                paddingBottom: "60px",
+              }}
+            >
+        <div className="container align-items-center">
+          <h3 align="center" style={{ color: "#C81451" }}>
+            YRC Open Data Integrity and Transparency Assessment : OIT
+          </h3>
+          <h4 align="center">การเปิดเผยข้อมูลสาธารณะ โรงเรียนยุพราชวิทยาลัย</h4>
+
+          <div className="container" style={{ maxWidth: "600px" }}>
+            <div className="">
+              <input
+                type="text"
+                className="form-control search mt-3"
+                placeholder="ค้นหา"
+              />
             </div>
-            {/* /.main-nav__main-navigation */}
-            <div className="main-nav__right" style={{color:"dark"}}>
-              <a href="#" className="side-menu__toggler" style={{color:"dark"}}>
-                <span></span>
-              </a>
-             
-            </div>
-            {/* /.main-nav__right */}
           </div>
-          {/* /.container-fluid */}
-        </nav>
-        <nav className="main-nav__two stricky stricked-menu shadow">
-          <div className="container-fluid" >
-            <div className="main-nav__logo-box">
-            <a href="index.html" className="f-pink" style={{fontSize:"20px",fontWeight:"600",}}>
-                โรงเรียนยุพราชวิทยาลัย จังหวัดเชียงใหม่
-                <br/>
-                <small className="text-dark" style={{fontWeight:"600",marginTop:"-7px",display: "block"}}>Yupparaj Wittayalai School </small>
-              </a>
 
-            </div>
-            {/* /.main-nav__logo-box */}
-             {/* /.main-nav__logo-box */}
-             <div className="center-logo">
-              <a href="index.html">
-                <img src="/img/logo.png" className="img-fluid" alt />
-              </a>
-            </div>
-            <div className="main-nav__main-navigation">
-              <ul className=" main-nav__navigation-box">
-              <li className="current">
-                  <a href="index.html" className="s1">
-                    หน้าหลัก
-                    
-                  </a>
-                  
-                </li>
-              
-                <li className="dropdown">
-                  <a href="services-1.html">
-                    เกี่ยวกับโรงเรียน
-                    <button className="dropdown-btn">
-                      <i className="fa fa-angle-right" />
-                    </button>
-                  </a>
-                  <ul>
-                    <li>
-                      <a href="services-1.html">Services 01</a>
-                    </li>
-                    <li>
-                      <a href="services-2.html">Services 02</a>
-                    </li>
-                    <li>
-                      <a href="services-details.html">Services Details</a>
-                    </li>
-                  </ul>
-                  {/* /.sub-menu */}
-                </li>
-                <li className="dropdown">
-                  <a href="portfolio-standard.html">
-                    YRC E-Service
-                    <button className="dropdown-btn">
-                      <i className="fa fa-angle-right" />
-                    </button>
-                  </a>
-                  <ul>
-                    <li>
-                      <a href="portfolio-standard.html">Portfolio Standard</a>
-                    </li>
-                    <li>
-                      <a href="portfolio-full.html">Portfolio Full</a>
-                    </li>
-                    <li>
-                      <a href="portfolio-masonary.html">Portfolio Masonary</a>
-                    </li>
-                    <li>
-                      <a href="portfolio-details.html">Portfolio Details</a>
-                    </li>
-                  </ul>
-                  {/* /.sub-menu */}
-                </li>
-                <li className="dropdown">
-                  <a href="portfolio-standard.html">
-                    YRC E-Learning
-                    <button className="dropdown-btn">
-                      <i className="fa fa-angle-right" />
-                    </button>
-                  </a>
-                  <ul>
-                    <li>
-                      <a href="portfolio-standard.html">Portfolio Standard</a>
-                    </li>
-                    <li>
-                      <a href="portfolio-full.html">Portfolio Full</a>
-                    </li>
-                    <li>
-                      <a href="portfolio-masonary.html">Portfolio Masonary</a>
-                    </li>
-                    <li>
-                      <a href="portfolio-details.html">Portfolio Details</a>
-                    </li>
-                  </ul>
-                  {/* /.sub-menu */}
-                </li>
-              </ul>
-            </div>
-            {/* /.main-nav__main-navigation */}
-            <div className="main-nav__right">
-              <a href="#" className="side-menu__toggler">
-                <span />
-              </a>
-            </div>
-            {/* /.main-nav__right */}
+          <div className="container" style={{ maxWidth: "850px" }}>
+            <div className="row mt-5">{openDataElements}</div>
           </div>
-          {/* /.container-fluid */}
-        </nav>
-        {/* /.main-nav__one */}
-      </header>
-
-            {/*Start Banner*/} 
-            <div className="container-fluid mt-3">
-                <img src="/img/banner.jpg" className="img-fluid w-100 mt-5 radius-banner" alt />
-
-                <div className="container-fluid header-yrc mt-4 ">
-                  <div className="container my-4">
-                    <div className="row">
-                        <div className="col-xl-4">
-                          <img src="/img/yup.png" class="img-fluid"></img>
-                        </div>
-                        <div className="col-xl-8 mt-5 text-center">
-                          <h3 className="s1 mt-4 text-light">โรงเรียนเมืองนครเชียงใหม่ สู่ โรงเรียนยุพราชวิทยาลัย</h3>
-                          <h1 className="s1 text-light">ก้าวเข้าสู่ ๑๑๖ แห่งการพระราชทานนาม</h1>
-                        </div>
-                    </div>
-                  </div>
-                </div>
-              </div>{/* /.col-lg-12 */}
-
-              {/*Start Header*/}
-             
-
-
-              {/*Start sldie and director*/}
-              <div className="container-fluid bg-director mt-4">
-                <div className="container">
-                  <div className="row">
-                      <div className="col-xl-8 mt-5 mb-5 text-center">
-                      <div id="carouselExampleControls" className="carousel slide" data-ride="carousel">
-                          <div className="carousel-inner">
-                            <div className="carousel-item active">
-                              <img className="d-block w-100 radius-banner" src="/images/regis.jpg" alt="First slide" />
-                            </div>
-                            <div className="carousel-item">
-                              <img className="d-block w-100 radius-banner" src="/images/soldier.jpg" alt="Second slide" />
-                            </div>
-                            <div className="carousel-item">
-                              <img className="d-block w-100 radius-banner" src="/images/teacher63.jpg" alt="Third slide" />
-                            </div>
-                          </div>
-                          <a className="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                            <span className="carousel-control-prev-icon" aria-hidden="true" />
-                            <span className="sr-only">Previous</span>
-                          </a>
-                          <a className="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                            <span className="carousel-control-next-icon" aria-hidden="true" />
-                            <span className="sr-only">Next</span>
-                          </a>
-                        </div>
-
-                      </div>
-                      <div className="col-xl-4 mt-5">
-                            <br/>
-                            <br/>
-                            <br/>
-                            <br/>
-                            <br/>
-                            
-                            <div className="container mt-4 mb-4" style={{backgroundColor: "#FFFFFF",borderRadius: "15px",boxShadow: "3px 10px 20px #00000029",paddingBottom: "50px",}} align="center">
-                                <img src="/img/director.jpg" className="img-fluid rounded-circle" width="60%" style={{ border: "5px solid #C81451",marginTop: "-135px" }}/>
-                                <h2 style={{fontWeight: "600",fontSize: "25px",color: "#EF4982",}} className="mt-3 fw-600">
-                                    นายทีปชัย วงษ์วรศรีโรจน์
-                                </h2>
-                                <h3 style={{ fontWeight: "500", fontSize: "18px" }}>
-                                    ผู้อำนวยการโรงเรียนยุพราชวิทยาลัย
-                                </h3>
-                            </div>
-                      </div>
-                      
-                  </div>
-                </div>
-              </div>
-
-      {/*Start News*/}
-      <div className="container-fluid mt-5">
-          <h3 class="f-pink text-center">ข่าวประชาสัมพันธ์ โรงเรียนยุพราชวิทยาลัย</h3>
-          <h4 class="text-center">สามารถติดตามข่าวสารการประชาสัมพันธ์ต่างๆ ของโรงเรียนได้ที่นี่</h4>
+        </div>
       </div>
 
-      {/*Start Activity*/}
-      <div className="container-fluid mt-5">
-        <h3 class="f-pink text-center">ข่าวกิจกรรม โรงเรียนยุพราชวิทยาลัย</h3>
-        <hr/>
-          <div className="row">
-            <div className="col-xl-6">
-
-            </div>
-
-            <div className="col-xl-6">
-
-            </div>
+      <section className="testimonials-two" style={{ overflow: "hidden" }}>
+        <div className="container">
+          <div className="block-title-two text-center">
+            <p>YRC Hall of fame</p>
+            <h3>คนเก่งยุพราชวิทยาลัย</h3>
           </div>
+          {/* /.block-title-two */}
+          <div
+            className="testimonials-two__carousel owl-carousel thm__owl-carousel owl-theme"
+            data-options='{"loop": false, "margin": 30, "stagePadding": 0, "items": 3, "smartSpeed": 700, "autoplay": true, "autoplayTimeout": 7000, "nav": false, "dots": true, "responsive": { "0": { "items": 1, "stagePadding": 0 }, "1199": { "items": 2 }, "1200": { "items": 3 } }}'
+          >
+            {hallOfFameElements}
+          </div>
+          {/* /.testimonials-two__carousel owl-carousel thm__owl-carousel owl-theme */}
+        </div>
+        {/* /.container */}
+      </section>
+      {/* /.testimonials-two */}
       </div>
+
+      <a href="#" data-target="html" className="scroll-to-target scroll-to-top bg-yrc"><i class="fa fa-angle-up"></i></a>
 
       
       <div className="side-menu__block">
@@ -343,8 +110,8 @@ export default function index() {
               สำนักงานเขตพื้นที่การศึกษามัธยมศึกษา เขต 34 (เชียงใหม่-แม่ฮ่องสอน)
             </p>
             <p>
-              <a href="mailto:needhelp@bizkar.com">yrc@yupparaj.ac.th</a>{" "}
-              <br /> <a href="tel:888-999-0000">888 999 0000</a>
+              <a href="mailto:needhelp@bizkar.com">yrc@yupparaj.ac.th</a>
+              <br /> <a href="tel:053-418673-5">053-418673-5</a>
             </p>
             <div className="side-menu__social">
               <a className="fab fa-facebook-f" href="#" />

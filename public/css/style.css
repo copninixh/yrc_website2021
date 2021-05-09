@@ -41,12 +41,12 @@ font-family: 'Gilroy-Bold';
 font-family: 'Gilroy-ExtraBold';*/
 
 :root {
-  --thm-font: "Open Sans", sans-serif;
-  --heading-font: "Gilroy-Bold";
-  --special-font-exb: "Gilroy-ExtraBold";
-  --special-font-light: "Gilroy-Light";
-  --special-font-bold: "Gilroy-Bold";
-  --special-font-smb: "Gilroy-SemiBold";
+  --thm-font: "IBMPlexSansThai", sans-serif;
+  --heading-font: "IBMPlexSansThai";
+  --special-font-exb: "IBMPlexSansThai";
+  --special-font-light: "IBMPlexSansThai";
+  --special-font-bold: "IBMPlexSansThai";
+  --special-font-smb: "IBMPlexSansThai";
   --thm-base: #C81451;
   --thm-base-rgb: 255, 87, 164;
   --thm-primary: #4275ff;
@@ -72,12 +72,17 @@ font-family: 'Gilroy-ExtraBold';*/
   font-display: swap;
 }
 
+
 body {
   font-family: "IBMPlexSansThai", sans-serif;
 }
 .s1{
   font-family: "IBMPlexSansThai", sans-serif;
 }
+.block-title-two {
+  font-family: "IBMPlexSansThai", sans-serif;
+}
+
 
 a:active,
 a:hover,
@@ -370,8 +375,8 @@ a:visited {
   animation-fill-mode: both;
   -webkit-animation-name: flipInY;
   animation-name: flipInY;
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
+  -webkit-animation-duration: 2.5s;
+  animation-duration: 2.5s;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }

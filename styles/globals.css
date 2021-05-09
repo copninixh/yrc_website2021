@@ -33,9 +33,17 @@ p {
 .footer-btn {
   background-color: #c81451;
   color: #fff;
-  border-radius: 27px;
+  border-radius: 100px;
+  width: 35px;
+  height: 35px;
   transition: all 0.4s ease;
-  padding: 5px 15px;
+  margin-right: 5px;
+  text-align: center;
+}
+.footer-btn > i {
+
+  margin-left: -2px;
+ 
 }
 
 .footer-btn:hover {
@@ -43,8 +51,40 @@ p {
   color: #ffffff;
 }
 
+.card {
+  border: solid 0px white;
+  border-radius: 15px;
+  transition: 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  color: #c81451;
+}
+
+.search {
+  border: solid 1px white;
+  border-radius: 100px;
+  transition: 0.2s;
+  border: none;
+}
+
+.search:focus {
+  transform: scale(1.03);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border: none;
+}
+
+.block-title-two {
+  font-family: "IBMPlexSansThai", sans-serif;
+}
+
 .radius-banner{
   border-radius: 15px;
+}
+.radius-button{
+  border-radius: 30px;
 }
 .header-yrc{
   background: rgb(240,135,227);
@@ -78,4 +118,29 @@ p {
 }
 .fw-600{
   font-weight: 600;
+}
+.bg-card{
+  background-color: #FE1B68;
+}
+.border-n{
+  border: none;
+}
+.line{
+  background-color: #e91e63;
+  color: #e91e63;
+  height: 5px;
+  width: 100%;
+}
+.text1{
+  display:flex;
+  flex-direction:row;
+  align-items: center;
+}
+.text2{
+  flex-grow:0;
+}
+.line2{
+  flex-grow:1;
+  height: 4px;
+  background-color: #e91e63;
 }
