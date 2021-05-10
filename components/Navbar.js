@@ -44,13 +44,13 @@ export default class Navbar extends Component {
               <div className="main-nav__main-navigation">
                 <ul className=" main-nav__navigation-box">
                   <li className="current">
-                    <a href="index.html" className="s1">
+                    <a href="index.html" className="s1 item1">
                       หน้าหลัก
                     </a>
                   </li>
 
                   <li className="dropdown">
-                    <a href="services-1.html">
+                    <a href="services-1.html" className="item2">
                       เกี่ยวกับโรงเรียน
                       <button className="dropdown-btn">
                         <i className="fa fa-angle-right" />
@@ -64,7 +64,7 @@ export default class Navbar extends Component {
                     {/* /.sub-menu */}
                   </li>
                   <li className="dropdown">
-                    <a href="portfolio-standard.html">
+                    <a href="portfolio-standard.html" className="item3">
                       YRC E-Service
                       <button className="dropdown-btn">
                         <i className="fa fa-angle-right" />
@@ -78,7 +78,7 @@ export default class Navbar extends Component {
                     {/* /.sub-menu */}
                   </li>
                   <li className="dropdown">
-                    <a href="portfolio-standard.html">
+                    <a href="portfolio-standard.html" className="item4">
                       YRC E-Learning
                       <button className="dropdown-btn">
                         <i className="fa fa-angle-right" />

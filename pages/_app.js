@@ -53,10 +53,10 @@ export default class CMapp extends App {
             <img src="/images/load.png" className="preloader__image w-50" alt />
           </div>
 
-          
         <Component />
         <Footer />
         
+      
         <script src="/js/jquery.min.js"></script>
         <script src="/js/bootstrap.bundle.min.js"></script>
         <script src="/js/owl.carousel.min.js"></script>
@@ -72,6 +72,7 @@ export default class CMapp extends App {
         <script src="/js/bootstrap-datepicker.min.js"></script>
         <script src="/js/isotope.js"></script>
         <script src="/js/theme.js"></script>
+        <script src="/js/script.js"></script>
       </>
     );
   }
