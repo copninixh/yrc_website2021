@@ -46,4 +46,5 @@ $(document).ready(function() {
         delay:4.3,
         ease: Power2.easeOut
     })
+    
 });
