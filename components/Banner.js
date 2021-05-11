@@ -7,7 +7,7 @@ export default class Banner extends Component {
             {/*Start Banner*/} 
             <div className="container-fluid mt-4">
                 <img src="/img/banner.jpg" className="img-fluid w-100 mt-5 radius-banner" style={{zIndex:"0"}} alt />
-                <img src="/img/white_banner.jpg" className="img-fluid w-100 white-banner" style={{zIndex:"1" , marginTop:"-577px"}} alt />
+                {/* <img src="/img/white_banner.jpg" className="img-fluid w-100 white-banner" style={{zIndex:"1" , marginTop:"-577px"}} alt /> */}
 
                 <div className="container-fluid header-yrc mt-4 ">
                   <div className="container my-4">
